@@ -1,0 +1,436 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.dashboard{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+.sidebar{
+    background-color: #070C2F;
+    width: 20%;
+    height: 100%;
+    border: 2px solid;
+    
+}
+
+.container_dash{
+    padding: 10px 25px ;
+    background-color: #070C2F;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+
+}
+.dash_label{
+    padding: 20px;
+    margin-bottom: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    background-color: #386284;
+    border-radius: 7px;
+    border: 2px solid #000000;
+    width: 100%;
+}
+
+.orders_label{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+.orders_label h3{
+    width: 15%;
+}
+.border_label_wrapper{
+    background-color: #273C78;
+    border-radius: 7px;
+    border-radius: 7px;
+    border: 2px solid #000000;
+    margin-bottom: 10px;
+}
+.custumer_img{
+    min-width: 90px;
+    display: flex;
+    width: 15%;
+}
+.custumer_img img{
+    width: 30px;
+}
+
+.margin_b{
+    padding: 20px 25px;
+}
+
+.products_img{
+    width: 15%;
+}
+
+.products_img img{
+  width: 30px;
+}
+
+.orders_label h5{
+    width: 15%;
+}
+
+
+.sidebar_logo{
+display: flex;
+justify-content: center;
+
+}
+
+.admin_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin_img img{
+    margin-top: 30px;
+    max-width: 60%;
+    height: auto;
+}
+
+.admin_name{
+    padding-top: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.admin_label{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    font-weight: bold; 
+    color: white;
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+
+}
+
+.dashboard_label{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.image_container {
+    display: flex;
+    justify-content: space-between  ; 
+    align-items: center; 
+    gap: 1px; 
+}
+
+.image_container img {
+    max-width: 100%;
+    min-height: 100%; 
+    height: 230px;
+}
+
+
+
+
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar {
+    margin-top: 50px;
+    overflow: hidden;
+    display: flex; 
+    flex-direction: column; 
+}
+
+
+.navbar a {
+    color: rgb(255, 255, 255); 
+    text-align: center; 
+    padding: 30px 20px; 
+    text-decoration: none; 
+}
+
+
+.navbar a:hover {
+    background-color: #e4e4e465; 
+    color: black; 
+    border-radius: 7px;
+}
+
+.active {
+    background-color: #273C78; 
+    color: rgb(0, 0, 0); 
+    border-radius: 5px;
+}
+
+.avail_products_img img{
+    width: 100px;
+  }
+
+.remove_btn img {
+    width: 30px; 
+    height: auto;
+}
+
+.adminorders_label{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.adminorders_label h5{
+    width: 15%;
+}
+
+.avail_products_img{
+    width: 15%;
+}
+
+.remove_btn{
+    min-width: 100px;
+}
+
+
+
+.admin_border_label_wrapper{
+    background-color: #273C78;
+    border-radius: 7px;
+    border-radius: 7px;
+    border: 2px solid #000000;
+    margin-bottom: 10px;
+}
+
+.setings_label{
+    padding: 10px 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.select_language_label{
+    margin-bottom: 20px;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px 20px;
+    border-bottom: 1px solid black;
+    flex-direction: column;
+}
+
+
+.language_settings img{
+    height: 600px;
+}
+
+.admin_language_wrapper{
+    background-color: #273C78;
+    border-radius: 7px;
+    border: 2px solid #000000;
+    margin-bottom: 10px;
+    width: 486px;
+}
+
+.buttons{
+    margin-bottom: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.buttons button{
+
+    border-radius: 5px;
+   
+    margin: 20px;
+    background-color: #134668;
+}
+
+.add_update_delate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add_update_delate button{  
+    padding: 1ch;
+    border: 0;
+}
+
+.next_buttons{
+    display: flex;
+    align-items: center;  
+}
+
+.next_buttons button{
+    padding: 1ch;  
+    border: 0;
+}
+
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    z-index: 9999;
+}
+
+.popup img {
+    max-width: 100%;
+    max-height: 80vh;
+}
+
+.show {
+    display: block;
+}
+
+.orders_label h4{
+    width: 15%;
+}
+
+.admin_box{
+    height: 50%;
+    width: 50%;
+}
+
+.login_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+
+.wrapper{
+    width: 420px;
+    background-color: #386284;
+    color: white;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper .input_box{
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input_box input{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input_box input::placeholder{
+    color: #fff;
+}
+
+.input_box i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translate(-50%);
+    font-size: 20px;
+}
+
+.wrapper .remember_forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.remember_forgot label input{
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.remember_forgot a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember_forgot a:hover{
+    text-decoration: underline;
+}
+
+.wrapper .btn{
+    width: 100%;
+    height: 45px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.btn{
+    padding-top: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+.logout_btn{
+    margin-top: 40px;
+    padding-top: 12px;
+    display: flex;
+    justify-content: center;
+    width: 10%;
+    height: 45px;
+    background-color: #da0d29;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}

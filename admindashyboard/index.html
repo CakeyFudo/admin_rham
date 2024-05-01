@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artision</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+</head>
+<body id = "index_section">
+  <main>
+    
+    
+    <div>
+      <section class="img-bg-blend">
+                   <img src="./images/logoimg.png" class="logoimg">   
+                        <div>
+                             <form class="rectangle-search-bar"><input type="text" class="search-input" placeholder="Search" onkeydown="search(event)"></form>
+                        </div>
+                                <a href="index.html" class="text-home-top-right">Home</a>
+                                <a href="products.html" class="text-Products-top-right">Products</a>
+                                <a href="aboutus.html" class="text-Aboutus-top-right">AboutUs</a>
+                                <img src="./images/profilelogin.png" alt="Login/Register" class="loginlogo" onclick="togglePopOut()">
+
+
+
+                                <div class="overlay" id="overlay"></div>
+                        <div class="pop-out-container" id="popOutContainer">
+                            <img src="./images/logoimg.png" class="logologinContainer">
+                             <img src="./images/CloseButton.png" alt="Close" class="close-button" onclick="closePopOut()">
+
+
+                             <div class="acclogin-label">Account Log in</div>
+                                 <form>
+
+                                    <input type="text" id="username" name="username" placeholder="Email" required>
+                                    <input type="password" id="password" name="password" placeholder="Password" required>
+                                    <div class="checkbox-container" style="align-items: flex-start;">
+                                        <input type="checkbox" id="rememberMe" name="rememberMe">
+                                         <span class="rememberMe">Remember Me</span>
+                                         <span class="forgotps-text">Forgot password</span>
+                                    </div>
+
+                                      
+                                    
+            
+                                    
+                                    <a href="./indexloggedin.html"><button type="submit">Login</button></a>
+                                     <div>
+                                          <span class="registerWords">Don't have an account?</span>
+                                          <a href="./register.html"><span class="register-text">Register</span></a>
+                                      </div>
+                                 </form>
+                            </div>
+
+
+
+                            <script>
+                                function togglePopOut() {
+                                  const popOutContainer = document.getElementById('popOutContainer');
+                                  const overlay = document.getElementById('overlay');
+                            
+                                  if (popOutContainer.style.display === 'block') {
+                                    popOutContainer.style.display = 'none';
+                                    overlay.style.display = 'none'; 
+                                  } else {
+                                    popOutContainer.style.display = 'block';
+                                    overlay.style.display = 'block'; 
+                                    darkenBackground(); 
+                                  }
+                                }
+                            
+                                function closePopOut() {
+                                    const popOutContainer = document.getElementById('popOutContainer');
+                                    const overlay = document.getElementById('overlay');
+                                    popOutContainer.style.display = 'none';
+                                    overlay.style.display = 'none'; 
+                                    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.5)'; 
+                                    }
+                            
+                                function darkenBackground() {
+                                  const overlay = document.getElementById('overlay');
+                                  let opacity = parseFloat(window.getComputedStyle(overlay).getPropertyValue('background-color').split(',')[3]);
+                            
+                                  
+                                  const interval = setInterval(function() {
+                                    opacity += 0.1;
+                                    overlay.style.backgroundColor = `rgba(0, 0, 0, ${opacity})`;
+                                    if (opacity >= 0.8) {
+                                      clearInterval(interval); 
+                                    }
+                                  }, 100); 
+                                }
+                            </script>
+
+
+                     <script>
+                           function search(event) {
+                                    if (event.key === "Enter") {
+                                    let searchText = event.target.value.trim();
+                                    alert("Searching for: " + searchText);
+                                    }
+                                   }
+                     </script>
+  
+    
+
+  
+
+            </section>
+    </div>
+  </main>
+    
+
+<section class="sectTrending">
+
+      <label class="trending-label">TRENDING</label>
+      
+      <div class="image-container">
+        
+          <div class="home_card">
+            <img src="./images/BrushProduct.png">
+          </div>
+        
+          <div class="home_card">
+            <img src="./images/GlueProduct.png">
+          </div>
+        
+          <div class="home_card">
+            <img src="./images/PaintProduct.png">
+          </div>
+        
+          <div class="home_card">
+            <img src="./images/PenProduct.png">
+          </div>
+        
+          <div class="home_card">
+            <img src="./images/PaperProduct.png">
+          </div>
+        
+          <div class="home_card">
+            <img src="./images/GlueProduct.png">
+          </div>
+      </div>
+
+</section>
+
+<section class="sectTrending">
+
+  <label class="trending-label">YOU MAY LIKE</label>
+  
+  <div class="image-container">
+    
+      <div class="home_card">
+        <img src="./images/BrushProduct.png">
+      </div>
+    
+      <div class="home_card">
+        <img src="./images/GlueProduct.png">
+      </div>
+    
+      <div class="home_card">
+        <img src="./images/PaintProduct.png">
+      </div>
+    
+      <div class="home_card">
+        <img src="./images/PenProduct.png">
+      </div>
+    
+      <div class="home_card">
+        <img src="./images/PaperProduct.png">
+      </div>
+    
+      <div class="home_card">
+        <img src="./images/GlueProduct.png">
+      </div>
+  </div>
+
+</section>
+
+<!--
+<section class="sectRecent">
+      <label class="recently-label">YOU MAY LIKE</label>  
+    <div class="image-container">
+      <div class="home_card">
+        <img src="./images/BrushProduct.png">
+      </div>
+      <div class="home_card">
+        <img src="./images/GlueProduct.png">
+      </div>
+      <div class="home_card">
+        <img src="./images/PaintProduct.png">
+      </div>
+      <div class="home_card">
+        <img src="./images/PenProduct.png">
+      </div>
+      <div class="home_card">
+        <img src="./images/PaperProduct.png">
+      </div>
+      <div class="home_card">
+        <img src="./images/GlueProduct.png">
+      </div>     
+
+</section> 
+-->
+
+<div class="footer">
+  <div class="container">
+      <div class="row">
+          <div class="footer-col-1">
+              <img src="./images/logoimg.png">
+          </div>
+          <div class="footer-col-2">
+              <h3>Useful Links</h3>
+              <div class="links">
+                <ul>
+                  <li>Discount</li>
+                  <li>Blogs</li>
+                  <li>Policy</li>
+                  <li>Products</li>
+                  <li>Coupons</li>
+              </ul>
+              </div>
+                
+          </div>
+          <div class="footer-col-3">
+              <h3>Follow Us</h3>
+              <div class="links">
+              <ul>
+                  <li>Facebook</li>
+                  <li>Instagram</li>
+                  <li>Twitter</li>
+                  <li>LinkedIn</li>
+                  <li>Youtube</li>
+              </ul>
+            </div>  
+          </div>
+      </div>
+      <hr>
+          <p class="copyright">Copyright 2024 - Cakey Wakey -</p>
+      </hr>
+  </div>
+</div>
+
+</body>
+</html>
